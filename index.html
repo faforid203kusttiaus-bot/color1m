@@ -169,7 +169,7 @@
 
         <div class="info-bot">
           <div>Next Period<br><strong id="period">------</strong></div>
-          <div>Time Left<br><strong id="time">30s</strong></div>
+          <div>Time Left<br><strong id="time">60s</strong></div>
         </div>
 
         <button id="btn-bot" class="btn-auth mb-6" style="background: var(--primary-bot)">Generate Prediction</button>
@@ -397,7 +397,7 @@
         };
 
         setInterval(() => {
-          document.getElementById('time').textContent = (30 - (new Date().getSeconds() % 30)) + "s";
+          document.getElementById('time').textContent = (60 - (new Date().getSeconds() % 60)) + "s";
         }, 1000);
     }
 </script>
