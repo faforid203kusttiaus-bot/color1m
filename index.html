@@ -347,6 +347,7 @@
             hBox.appendChild(d);
           });
         }
+        
 
         document.getElementById('btn-bot').onclick = () => {
           const res = predict();
@@ -360,6 +361,7 @@
           numElem.classList.remove("pulse");
           void numElem.offsetWidth;
 
+            
           if (res.signal === "WAITING") {
             sigElem.textContent = "WAITING";
             sigElem.style.color = "var(--yellow)";
@@ -401,6 +403,7 @@
         }, 1000);
     }
 </script>
+    
 
 </body>
 </html>
